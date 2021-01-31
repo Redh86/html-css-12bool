@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* regole riga */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  content: "";
+  display: table;
+  clear: both;
+}
+/* contorni debug */
+.debug .container {
+  height: 300px;
+  border: 1px solid black;
+}
+.debug .container [class*="col_"] {
+  height: 100%;
+  border: 1px solid black;
+}
+/* regole colonna */
+[class*="col_"]{
+  position: relative;
+  float: left;
+}
+[class*="col_"] p {
+  text-align: center;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col_1 {
+  width: calc( ( 100% / 12) * 1 );
+}
+.col_2 {
+  width: calc( ( 100% / 12) * 2 );
+}
+.col_6 {
+  width: calc( ( 100% / 12) * 6 );
+}
+.col_8 {
+  width: calc( ( 100% / 12) * 8 );
+}
+.col_12 {
+  width: calc( ( 100% / 12) * 12 );
+}
+.no_border {
+  border-style: none;
+}

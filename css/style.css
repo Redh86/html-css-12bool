@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: pink;
+}
+.no_border {
+  background-color: #F07F80;
+  padding: 1px;  
+}

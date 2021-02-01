@@ -54,7 +54,7 @@
 .offset_11 {margin-left: calc( ( 100% / 12) * 11 );}
 .offset_12 {margin-left: calc( ( 100% / 12) * 12 );}
 
-@media all and (max_width: 766px ) {
+@media screen and (max_width: 766px ) {
   /* calcoli colonne xs */
   .col_xs_1 {width: calc( ( 100% / 12) * 1 );}
   .col_xs_2 {width: calc( ( 100% / 12) * 2 );}
@@ -84,7 +84,7 @@
   .offset_xs_12 {margin-left: calc( ( 100% / 12) * 12 );}
 }
 
-@media all and (min-width: 767px ) and (max-width: 991px) {
+@media screen and (min-width: 767px ) and (max-width: 991px) {
   /* calcoli colonne md */
   .col_md_1 {width: calc( ( 100% / 12) * 1 );}
   .col_md_2 {width: calc( ( 100% / 12) * 2 );}
@@ -114,7 +114,7 @@
   .offset_md_12 {margin-left: calc( ( 100% / 12) * 12 );}
 }
 
-@media all and (min-width: 992px ) {  
+@media screen and (min-width: 992px ) {
   /* calcoli colonne lg */
   .col_lg_1 {width: calc( ( 100% / 12) * 1 );}
   .col_lg_2 {width: calc( ( 100% / 12) * 2 );}

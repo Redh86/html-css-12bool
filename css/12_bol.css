@@ -3,14 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* regole riga */
-.container {
-  width: 1170px;
-  margin: 0 auto;
-  content: "";
-  display: table;
-  clear: both;
-}
 /* contorni debug */
 .debug .container {
   height: 300px;
@@ -20,35 +12,30 @@
   height: 100%;
   border: 1px solid black;
 }
+/* regole riga */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* regole colonna */
 [class*="col_"]{
-  position: relative;
   float: left;
 }
-[class*="col_"] p {
-  text-align: center;
-  font-size: 1.2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.col_1 {
-  width: calc( ( 100% / 12) * 1 );
-}
-.col_2 {
-  width: calc( ( 100% / 12) * 2 );
-}
-.col_6 {
-  width: calc( ( 100% / 12) * 6 );
-}
-.col_8 {
-  width: calc( ( 100% / 12) * 8 );
-}
-.col_12 {
-  width: calc( ( 100% / 12) * 12 );
-}
-.no_border {
-  border-style: none;
-}
+/* calcoli colonne */
+.col_1 {width: calc( ( 100% / 12) * 1 );}
+.col_2 {width: calc( ( 100% / 12) * 2 );}
+.col_3 {width: calc( ( 100% / 12) * 3 );}
+.col_4 {width: calc( ( 100% / 12) * 4 );}
+.col_5 {width: calc( ( 100% / 12) * 5 );}
+.col_6 {width: calc( ( 100% / 12) * 6 );}
+.col_7 {width: calc( ( 100% / 12) * 7 );}
+.col_8 {width: calc( ( 100% / 12) * 8 );}
+.col_9 {width: calc( ( 100% / 12) * 9 );}
+.col_10 {width: calc( ( 100% / 12) * 10 );}
+.col_11 {width: calc( ( 100% / 12) * 11 );}
+.col_12 {width: calc( ( 100% / 12) * 12 );}
